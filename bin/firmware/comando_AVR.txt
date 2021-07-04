@@ -1,0 +1,6 @@
+* Para programar con avrisp:arduino como programador
+avrdude -c avrisp -p m88 -P /dev/ttyACM0 -b 19200 -e -U flash:w:/home/mario/Documentos/usbasp.2011-05-28/bin/firmwareusbasp.atmega88.2011-05-28.hex -U efuse:w:0xff:m -U hfuse:w:0xdd:m -U lfuse:w:0xff:m -B 1
+
+* Para programar con USB ISP
+avrdude -c usbasp -p m88   -e -U flash:w:/home/mario/Documentos/usbasp.2011-05-28/bin/firmware/usbasp.atmega88.2011-05-28.hex -U efuse:w:0xff:m -U hfuse:w:0xdd:m -U lfuse:w:0xff:m -B 1
+
