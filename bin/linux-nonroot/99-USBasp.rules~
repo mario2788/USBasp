@@ -3,5 +3,3 @@
 
 #SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", SYSFS{idVendor}=="16c0", SYSFS{idProduct}=="05dc", MODE="0666"
 SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="05dc", MODE="0666", GROUP="mario"
-
-# ejecuctar : sudo udevadm control --reload-rules && sudo udevadm trigger, ya está en insttall_rule 
